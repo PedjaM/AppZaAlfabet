@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1, user-scalable=no" name="viewport">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <title>Learn Serbian alphabet</title>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link href="vezbanje.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+#sadrzaj{
+  margin: 0 auto;
+  max-width: 50em;
+  font-family: Arial;
+  line-height: 1,5;
+  text-align: justify;
+  padding: 4em 1em;
+  color: #555;
+  
+font-size: 14px;
+}
+
+#idiNaLekciju{
+  
+  margin-top: 5vw;
+  
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border: none;
+  background-color: #5AB75D;
+  color: white;
+  text-decoration: none;
+  padding: 1%;
+  font-size: 14px;
+}
+
+#idiNaLekciju:hover{
+  transform: scale(1.1);
+}
+
+#idiNaLekciju:focus{
+	outline: none;
+}
+
+#levo{
+	position: absolute;
+	height: 326px;
+	width: 15%;
+	
+	margin: 0;
+
+}
+
+#slike{
+	margin-left: 20%;
+}
+
+.slike{
+	border: 3px solid white;
+	height: 50px;
+	width: 50px;
+}
+
+.slike:hover{
+  cursor: pointer;
+}
+
+
+@media (max-width: 1100px){
+	#levo{
+		visibility: hidden;
+	}
+
+  .pokaziSliku{
+    visibility: hidden;
+  }
+}
+
+#slikaJedan{
+  background: url("tara.jpg");
+  background-size: contain;
+
+}
+
+#slikaDva{
+	background: url("kopaonik.jpg");
+	background-size: contain;
+}
+
+#slikaTri{
+	background: url("srbija.jpg");
+	background-size: cover;
+}
+
+#slikaCetiri{
+	background: url("novisad.jpg");
+	background-size: cover;
+}
+
+#vrh{
+  background-color: black;
+  background-image: url("srbija.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 5vw 2em;
+  text-align: center;
+    line-height: 1;
+    font-size: 50px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+.pokaziSliku{
+  margin-left: 37%;
+  border: 4px solid white;
+  background-color: transparent;
+  border-radius: 100%;
+  margin-top: 0;
+ 
+  position: absolute;
+
+}
+
+#pokaziSliku{
+   padding-left: 10px;
+  padding-right: 10px;
+}
+
+#vrati{
+   padding-left: 17px;
+  padding-right: 17px;
+}
+
+.pokaziSliku:focus{
+  outline: none;
+}
+
+</style>
+
+
+</head>
+<body>
+<script>
+      $(document).ready(function(){
+        $("#vrati").hide();
+    $("#slikaJedan").click(function(){
+        $("#vrh").css("background-image", "url('tara.jpg')");
+    });
+
+    $("#slikaDva").click(function(){
+        $("#vrh").css("background-image", "url('kopaonik.jpg')");
+    });
+
+     $("#slikaTri").click(function(){
+        $("#vrh").css("background-image", "url('srbija.jpg')");
+    });
+
+     $("#slikaCetiri").click(function(){
+        $("#vrh").css("background-image", "url('novisad.jpg')");
+    });
+
+     $('[data-toggle="tooltip"]').tooltip(10); 
+
+    
+
+});
+</script>
+<div id="teorija" style="height: 1900px;">
+<div id="levo">
+   <ul id="slike">
+   <br><br><br><br>
+   		<li class="slike"  id="slikaJedan" data-toggle="tooltip" title="Tara national park"></li>
+   		<br><br>
+   		<li class="slike" id="slikaDva" data-toggle="tooltip" title="Kopaonik national park"></li>
+   		<br><br>
+   		<li class="slike" id="slikaTri" data-toggle="tooltip" title="Uvac national park"></li>
+   		<br><br>
+   		<li class="slike" id="slikaCetiri" data-toggle="tooltip" title="Novi Sad"></li>
+   </ul>
+</div>
+
+ <div id="vrh" style="padding: 10vw 2em;">
+
+   <h1><strong>LEARN SERBIAN ALPHABET</strong></h1>
+    
+ </div>
+   <div class="container container-fluid">
+    <div class="row">
+      <div class="col-sm-1">
+      </div>
+      <div class="col-sm-1">
+        
+      </div>
+      <div class="col-sm-1">
+      </div>
+  <div class="col-sm-6" id="sadrzaj">
+    Have you ever been with friends and they all start using Serbian Cyrilic to communicate which makes you feel left out? Dumb? Or are you just looking for something to give you that competitive edge in a world of today's bussiness and figure Morse code is too hard to learn?
+    <br><br>
+    If you answered yes, then this webpage is made for <strike>a college project</strike> you. It's designed as a really simple and (hopefully)
+    fun app to learn Serbian Cyrillic alphabet and with it, how to pronounce any word in Serbian language. Seriously.
+    <br><br><br>
+    <h2>Why the hell should I care enough to learn it?</h2>
+    <br><br><br>
+     Fair question. Neither Serbian language nor it's original alphabet are known for their world prominence (<i>yet.</i>) However, they do have a unique quality of having the easiest spelling in the world. Every letter is made to represent a single voice which later strings into sentences. That's it. No double letters, no combinations of letters, no different pronunciations of letters depending their position in the word. 'Ma' is always pronounced like in English pronunciation of 'Mama', even in words like ma-yonaise. That means that if you learn the alphabet you can correctly pronounce any word in Serbian language. 
+
+     <br><br>And, because Cyrilic, like Latin alphabet, came from Greek alphabet, there are many shared letters between the two. So if you know how to read English (and for <i>some reason</i> I have a feeling that you do), you can pick up it's pronounciation fairly quickly. 
+
+     <br><br>
+
+     It can be very usefull if you are interested in Serbian culture and/or are  planning to visit because a lot of street and store signs and other stuff is written in it.
+     <br><br> And not just in Serbia, either. Serbian is also considered an official language of Bosnia and Greek Athos (among others languages) and is a recognized minority language in 7 other European states.
+     <br><br>
+      <img src="SerbianMap.png" style="width:100%"/>
+<span style="font-size: 70%;">
+     By <a href="//commons.wikimedia.org/wiki/User:Avala" title="User:Avala">Avala</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="http://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=5398195">Link</a></span>
+     <br><br><span style=" margin-left: 40%;"><i>Clearly</i> an advantage.</span>
+     <br><br><br><br>
+    <h2>Okay, how do I learn it?</h2>
+    <br><br><br>
+    Glad you ask. <br><br>
+    There are 10 lessons, each consisting of two parts: one where you study theory (it's not boring I promise) and one where you have the chance
+    to practice what you learned. I didn't  bother with 100% proper linguistic terms and accent distinctions 'cause it wouldn't really make learning easier and it's not that important unless you plan to study Serbian language academically. So, the theoretical part is mostly short and goes straigth to the point.
+     <br><br>
+     First 5 lessons consists of 6 letters each, going from the easy ones that both Cyrilic and Latin alphabets share to completely different letters with sounds that don't really exist in English. If that sounds difficult don't worry, it is. 
+     <br><br>
+     On the upside, a lot of Cyrilic letters are similar, so learning them in Serbian means you will have easier time to understand
+     Bulgarian, Russian, Ukrainian etc. alphabets.
+     <br><br>
+     Practical part is designed as a mini game (he said, sounding like a 70 year old proffesor introducing a "fun little test" to the class). When the sound button is clicked, the letter gets read and your job is to identify which one it is, click on  it and then check your answer. If it's correct, the button for the next one will appear while the lame sound effect plays. The goal is to have 10 correct answers and don't break the app 'cause it it's made with the javascript equivalent of popsicle sticks and glue. 
+     <br><br>
+     Now, <a href="vezbanje.php">go play!</a>
+    </div>
+     
+     <div class="col-sm-3">
+     <a href="vezbanje.php"><button id="idiNaLekciju">Go to the first lesson</button></a>
+     </div>
+          
+      </div>
+
+  </div>
+  
+</div>
+
+</body>

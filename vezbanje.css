@@ -1,0 +1,291 @@
+  #navigacija{
+       background-color: #8904B1;
+       border-radius: 0;
+       border-bottom: 2px solid black;
+       color: white;
+       
+
+
+     }
+
+    #myNavbar > ul > li > a{
+       color: white;
+       font-size: 14px;
+     }
+
+     #myNavbar > ul > li > a:hover{
+       transform: scale(1.1);
+     }
+
+     #aktivan{
+       background-color: #2E9AFE;
+     }te
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+  */
+
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-family: arial;
+   font-size: 98%;
+   vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+   display: block;
+  }
+  body {
+   line-height: 1;
+  }
+  ol, ul {
+   list-style: none;
+  }
+  blockquote, q {
+   quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+   content: '';
+   content: none;
+  }
+  table {
+   border-collapse: collapse;
+   border-spacing: 0;
+  }
+
+  body{
+   background-color: #F2F2F2;
+  }
+
+  #dugmeNav{
+   background-color: transparent;
+   border: white;
+  }
+
+  #dugmeNav:hover{
+  animation: vrti 0.5s linear 1;
+  }
+
+  @keyframes vrti{
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    75% {transform: rotate(270deg);}
+    100%{transform: rotate(360deg);}
+  }
+
+  #kontejner{
+   background-color: white;
+   border-radius: 20px;
+   border: 2px solid black;
+   height: 400px;
+   margin-top: 30px;
+-webkit-box-shadow: 1px 15px 54px -19px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 15px 54px -19px rgba(0,0,0,0.75);
+box-shadow: 1px 15px 54px -19px rgba(0,0,0,0.75);
+
+  }
+
+  #pozadina{
+   justify-content: center;
+  }
+
+  .dugme{
+   text-decoration: none;
+   border: none;
+   background-color: dodgerblue;
+   color: white;
+   border-radius: 5px;
+   padding: 20px;
+   margin-top: 0%;
+   font-size:12px;
+  }
+
+  .dugme:hover{
+    transform: scale(1.1);
+  }
+
+ 
+
+
+#clip{
+  margin-top: 60px;
+  border-radius: 100%;
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  margin-left: 20%;
+  background-color: #009BC8;
+}
+
+.dugmePocetno{
+  margin-left: 27%;
+}
+
+@media only screen and (max-width:  1300px) {
+    .daljeDugme{
+      margin-left: 0%;
+        width: 50px;
+        
+    }
+
+   
+
+    .dugmePocetno{
+      margin-left: 0;
+    }
+
+    #teorija{
+      height: 100%;
+    }
+
+
+}
+
+@media only screen and (max-width:  1300px) {
+   #clip{
+    margin-top: 70px;
+   }
+
+   #answer{
+    margin-top: 90px;
+   }
+   
+
+    .dugmePocetno{
+      margin-left: 0;
+    }
+
+    #teorija{
+      height: 100%;
+    }
+
+
+}
+
+
+
+#progres{
+  width: 60%;
+  margin-top: 2%;
+
+
+}
+
+#progresbar{
+  border: 2px solid black;
+}
+
+#goStudy{
+  color: gray;
+  float: right;
+  margin-top: 3%;
+
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  font-size: 120%;
+  
+}
+
+#goStudy:hover{
+  transform: scale(1.1);
+}
+
+#teorija{
+ position: absolute;
+  height: 800px;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+  overflow: hidden;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+main, #navigacija{
+  position: relative;
+}
+#sadrzaj{
+  margin: 0 auto;
+  max-width: 50em;
+  font-family: Arial;
+  line-height: 1,5;
+  text-align: justify;
+  padding: 4em 1em;
+  color: #555;
+  
+font-size: 14px;
+}
+
+h2{
+  
+  font-size: 20px;
+}
+
+h1,
+strong{
+  color: #fff;
+  }
+
+
+#vrh{
+  background-color: black;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 5vw 2em;
+  text-align: center;
+    line-height: 1;
+    font-size: 50px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+#goPractice:hover{
+   transform: scale(1.1);
+
+}
+
+#idiNaLekciju{
+  margin-top: 100px;
+  position: fixed;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border: none;
+  background-color: #5AB75D;
+  color: white;
+  text-decoration: none;
+  padding: 1%;
+  margin-left: 10%;
+  font-size: 14px;
+}
+
+#idiNaLekciju:hover{
+  transform: scale(1.1);
+}
+
+.progress-bar {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
